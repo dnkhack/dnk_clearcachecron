@@ -1,4 +1,4 @@
-# Prestashop World by DNK SOFT
+# DNK SOFT
 # Cron Job or Periodic Clear Prestashop Cache Module
 ### Overview
 PrestaShop employs various types of cache such as Smarty, assets (CSS/JS), XML cache, etc.
