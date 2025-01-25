@@ -65,4 +65,4 @@
 	</ul>
 </div>
 
-{include file='./prestashop.world.tpl'}
+{include file='./idnk.software.tpl'}

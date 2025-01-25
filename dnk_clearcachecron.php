@@ -28,7 +28,7 @@ class Dnk_clearcachecron extends Module
     {
         $this->name = 'dnk_clearcachecron';
         $this->tab = 'administration';
-        $this->version = '1.0.3';
+        $this->version = '1.0.4';
         $this->author = 'DNK Soft';
         $this->need_instance = 0;
         $this->bootstrap = true;

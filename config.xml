@@ -2,7 +2,7 @@
 <module>
     <name>dnk_clearcachecron</name>
     <displayName><![CDATA[Regularly clear cache with a time period or cron job]]></displayName>
-    <version><![CDATA[1.0.3]]></version>
+    <version><![CDATA[1.0.4]]></version>
     <description><![CDATA[You can clear the Prestashop cache at the frequency you want, without having to do it manually in the Admin.]]></description>
     <author><![CDATA[DNK Soft]]></author>
     <tab><![CDATA[administration]]></tab>
