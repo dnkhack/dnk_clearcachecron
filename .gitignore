@@ -1,0 +1,11 @@
+# Игнорирование файлов специфичных для IDE 
+.idea/
+.tmp/
+.vscode/
+vendor/
+.php-cs-fixer.dist.php
+.php-cs-fixer.cache
+composer.json
+composer.lock 
+*.sw*
+
