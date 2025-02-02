@@ -28,7 +28,7 @@ class Dnk_clearcachecron extends Module
     {
         $this->name = 'dnk_clearcachecron';
         $this->tab = 'administration';
-        $this->version = '1.0.4';
+        $this->version = '1.0.5';
         $this->author = 'DNK Soft';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -62,8 +62,8 @@ class Dnk_clearcachecron extends Module
         Configuration::updateValue('DNK_CLEARCACHECRON_DELETE_LOG', false);
 
         return parent::install() &&
-            $this->registerHook('header') &&
-            $this->registerHook('backOfficeHeader');
+            $this->registerHook('displayHeader') &&
+            $this->registerHook('displayBackOfficeHeader');
     }
 
     public function uninstall()
@@ -502,7 +502,7 @@ class Dnk_clearcachecron extends Module
     /**
      * Add the CSS & JavaScript files you want to be loaded in the BO.
      */
-    public function hookBackOfficeHeader()
+    public function hookDisplayBackOfficeHeader()
     {
         if (Tools::getValue('configure') === $this->name) {
             $this->context->controller->addJS($this->_path . 'views/js/back.js');
@@ -513,7 +513,7 @@ class Dnk_clearcachecron extends Module
     /**
      * Add the CSS & JavaScript files you want to be added on the FO.
      */
-    public function hookHeader()
+    public function hookDisplayHeader()
     {
         if (Configuration::get('DNK_CLEARCACHECRON_NON_CRON')) {
             $tmptime = strtotime('now');
